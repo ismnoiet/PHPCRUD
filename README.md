@@ -1,6 +1,6 @@
 # PHPCRUD
 ***Salam***,
-AutoCRUD is a set of simple classes to generate all the basic operations when connecting to a database
+PHPCRUD is a set of simple classes to generate all the basic operations when connecting to a database
 
 and the result will be a php file containg all those methods.
 
