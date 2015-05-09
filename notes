@@ -1,0 +1,8 @@
+constraints :
+=============
+1- we assume that the our table has a primary key composed of one single attribute and the first attribute is always the primary key
+2- table structure string should contains just one single space between attributes definition
+
+notes
+=====
+the update method is not fully implemented(don't try to use it !!! )
