@@ -118,7 +118,8 @@ class Table{
 			return $str;
 		}
 
-		function export(){
+		function export($filename=""){
+			$file = '';	
 			$str  = $this->create();
 			$str .= "\n".$this->read();
 			$str .=  "\n".$this->update();
@@ -127,12 +128,23 @@ class Table{
 			$str .="?>\n"; // end of the table class
 			
 
-			// create a file with the same table name inside the tables folder	
-			$file = "'tables/".$this->name.".php'"; 
-			$fh = fopen('tables/table1.php',"w");
-			fwrite($fh, $str);
-			fclose($fh);
-			return 1;			
+			if($filename !=''){
+				$file = $filename;
+			}else{
+				// create a file with the same table name inside the tables folder	
+				$file = $this->name; 				
+			}
+
+			$file = dirname(__DIR__) . "/tables/".$file.".php";
+			echo $file;
+
+			$fh = fopen($file,"w");
+			if($fh){
+				fwrite($fh, $str);
+				fclose($fh);
+				return 1;							
+			}
+			return 0;			
 
 		}
 
