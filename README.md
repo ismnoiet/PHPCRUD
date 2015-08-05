@@ -41,4 +41,5 @@ $table->generate('myname'); // the output is "tables/myname.php"
 ```  
 
 
+
 see the provided [example](./example.php)
