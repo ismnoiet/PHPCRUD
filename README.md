@@ -14,7 +14,16 @@ Well, in this example
 
 to generate CRUD operations for the previous table(user) using our PHPCrud module, we have to follow the next instructions : 
 
-
+before we get our hands on coding, we should change the database connection informations to suite our configuration. 
+inside " modules/connection.php" change the following informations :
+​
+```php
+        public $HOST = 'localhost'; // host name, localhost in case we are working locally
+        public $DB_NAME = 'abc';  // database name
+        public $USER_NAME = 'root'; // user name 
+        public $PASSWORD = 'password'; // password for the selected user 
+```
+Once the connection is istablished with  the database, then we play with PHPCrud  module
 
 ```php
 ​
