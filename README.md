@@ -8,7 +8,7 @@ CREATE TABLE user(id int(10) primary key auto_increment,name varchar(100));
 ```
 Well, in this example
 * we have a table with the name of user 
-* we have the id column(currently the first column is considered the primary key)
+* we have the id column(currently, in this module  the first column is considered the primary key)
 * we have also the name column
 
 
