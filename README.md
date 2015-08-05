@@ -39,3 +39,6 @@ to generate CRUD operations for the previous table(user) using our PHPCrud modul
 $table->generate();  //  "tables/user.php" file is generated in this case because the name of table is user
 $table->generate('myname'); // the output is "tables/myname.php"
 ```  
+
+
+see the provided [example](./example.php)
