@@ -1,5 +1,5 @@
 ## PHPCrud
-A DSL php module to generate php file containing all CRUD(Create,Read,Update,Delete) operations related to a given table description. 
+A DSL(Domain Specific Language) php module to generate php file containing all CRUD(Create,Read,Update,Delete) operations related to a given table description. 
 
 ### What's included 
 this module include three classes,**connection** class to deal with everything related to connection with DB, **attribute** class as its name says it is used to hold attributes informations and finally the **table** class which requires both connection and attribute classes
